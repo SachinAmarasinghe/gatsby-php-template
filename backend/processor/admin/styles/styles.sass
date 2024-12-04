@@ -1,0 +1,137 @@
+.login_page
+  background-image: url('https://lnxrentalsinquiries.com/images/hero.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+.login
+  width: 400px
+  background-color: #ffffff
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3)
+  margin: 100px auto
+
+  h1
+    text-align: center
+    color: #5b6574
+    font-size: 24px
+    padding: 20px 0 20px 0
+    border-bottom: 1px solid #dee0e4
+    margin: 0
+
+  form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 20px
+
+    label
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 50px
+      height: 50px
+      background-color: #3274d6
+      color: #ffffff
+
+    input
+      &[type="password"], &[type="text"]
+        width: 310px
+        height: 50px
+        border: 1px solid #dee0e4
+        margin-bottom: 20px
+        padding: 0 15px
+
+      &[type="submit"]
+        width: 100%
+        padding: 15px
+        margin-top: 20px
+        background-color: #3274d6
+        border: 0
+        cursor: pointer
+        font-weight: bold
+        color: #ffffff
+        transition: background-color 0.2s
+
+        &:hover
+          background-color: #2868c7
+          transition: background-color 0.2s
+
+.logo
+  background-color: #636466
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 30px
+
+  img
+    max-width: 150px
+
+.admin-page
+  .admin-header
+    background-color: #636466
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .info_pill_container
+    display: flex
+    gap: 20px
+    flex-wrap: wrap
+    .info_pill
+      display: inline-block
+      border: 1px solid #ced4da
+      border-radius: 5px
+      padding: 10px
+      max-width: calc(100/6)-calc(20px)
+      min-width: calc(100/6)-calc(20px)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .inner-data
+        display: flex
+        gap: 10px
+        span
+          font-size: 14px
+        h2
+          font-size: 16px
+      h2
+        margin: 0
+
+.scroll-table
+  overflow-x: scroll
+  max-width: 1320px
+  border: 1px solid #ced4da
+  border-radius: 5px
+  margin-bottom: 30px
+.custom-table
+  height: auto
+  thead
+    background-color: #f4f4f4
+    th
+      font-size: calc(1.3rem*1)/calc(2rem*1)
+      font-weight: normal
+      text-decoration: none
+      white-space: nowrap
+      padding: 5px 15px
+      a
+        text-decoration: none
+        text-transform: capitalize
+  tbody
+    tr
+      border-bottom: 1px solid #ced4da
+      cursor: pointer
+      &:hover
+        background-color: #f4f4f4
+      td
+        padding: 5px 15px
+        white-space: nowrap
+        font-size: calc(1.3rem*1)/calc(2rem*1)
+
+.records-form
+  display: flex
+  flex-direction: column
+  gap: 20px
+  .record
+    display: flex
+    flex-direction: column
+

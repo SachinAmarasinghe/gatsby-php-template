@@ -16,9 +16,9 @@ $secretKey = RECAPTCHA_SECRET_KEY;
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse");
 $responseKeys = json_decode($response, true);
 
-if (!$responseKeys['success']) {
-    die("reCAPTCHA verification failed.");
-}
+// if (!$responseKeys['success']) {
+//     die("reCAPTCHA verification failed.");
+// }
 
 // Check required fields
 $requiredFields = ['email', 'first_name', 'last_name', 'postal_code'];
