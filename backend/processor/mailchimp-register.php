@@ -6,7 +6,7 @@ error_reporting(0);
 function syncToMailchimp($email, $first_name, $last_name, $phone, $realtor, $postcode, $wrealtor, $database, $tag)
 {
     // Mailchimp API key and Audience List ID
-    $apiKey = '24359edfd88de9fd5372a59d6eda5d83-us19';
+
     $listId = '9fd01dfcc3';
 
     // Mailchimp API endpoint
